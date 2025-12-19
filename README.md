@@ -1,6 +1,6 @@
 # ROS-Bacterial-Metabolism
 This repository contains all scripts used in the workflow to assess the impact of Reactive Oxygen Species (ROS) on a given metabolism. 
-All codes available here were used to obtain my TFM "Assessing the impact of endogenous Reactive Oxygen Species (ROS) on bacterial metabolism"
+All codes available here were used to obtain the results presented in my Master's Final Work: "Assessing the impact of endogenous Reactive Oxygen Species (ROS) on bacterial metabolism"
 
 The *scripts/* folder is divided into 4 main directories:
   1) Proteome_processing_monomers : codes used to annotate structural markers of ROS susceptibility in P.putida proteome's monomers
