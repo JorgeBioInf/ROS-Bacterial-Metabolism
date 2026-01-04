@@ -5,10 +5,10 @@ All stuff available here was used to obtain the results presented in my **Master
 
 ## What can be found here?
 - `scripts/` folder with all the **scripts** used in the project. It is divided into 4 main subdirectories:
-  _`Proteome_processing_monomers` : codes used to annotate structural markers of ROS susceptibility in *P.putida* proteome's monomers.
-  _`Proteome_processing_multimers` : codes for annotating structural markers of ROS susceptibility in *P.putida* proteome's complexes (not used in the TFM).
-  _`ROS_modelling` : all codes and notebooks to evaluate the effect of ROS on *P.putida* GEM.
-  _`Stats_analysis` : all codes to perform statistical analysis.
+  `Proteome_processing_monomers` : codes used to annotate **structural markers of ROS susceptibility** in *P.putida* proteome's **monomers**.
+  `Proteome_processing_multimers` : codes for annotating **structural markers of ROS susceptibility** in *P.putida* proteome's **complexes** (not used in the TFM).
+  `ROS_modelling` : all codes and notebooks to evaluate the **effect of ROS on *P.putida* GEM**.
+  `Stats_analysis` : all codes to perform **statistical analysis**.
 
 - `data/` folder with intermediate datasets and final **results**. 
 - `supplementary_figures/` folder with **supplementary figures** for the TFM.
