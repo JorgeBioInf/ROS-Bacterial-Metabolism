@@ -10,5 +10,5 @@ Each script's details can be found inside their source code
 
 **INPUT**
 
-  -`iJN1480.txt`: GEM model
-  -`(ID_realtionships.json): optional dictionary with KEGG-UniProt identifiers relationship. Accelerates the process. An example can be found here.
+-`iJN1480.txt`: GEM model
+-`(ID_realtionships.json): optional dictionary with KEGG-UniProt identifiers relationship. Accelerates the process. An example can be found here.
