@@ -3,7 +3,7 @@ Intermediate datasets, various results of enrichment analysis and other results 
 
 ### Datasets with ROS susceptibility information for each protein
 - `ROS_summary_full.tsv`: with the structural information gathered from [monomeric processing](../scripts/Proteome_processing_monomers).
-- `ROS_summary_BRENDA_full.txt`: expanded dataset with aditional information. Obtained from the analysis through [BRENDA_ROS.py](../scripts/Stats_analysis/BRENDA_ROS.py) script.
+- `ROS_summary_BRENDA_full.txt`: expanded dataset with aditional information. Obtained from the analysis through [BRENDA_ROS.ipynb](../scripts/Stats_analysis/BRENDA_ROS.ipynb) script.
 - `Pputida_evidenced.txt`: subset of fully annotated enzymes. Comprises all proteins experimentally evidenced to be susceptible to ROS.
   
 ### Dictionaries used in the workflow
