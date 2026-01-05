@@ -7,6 +7,8 @@ Each script's details can be found inside their source code
 ### 1) Proteome extraction and identification of proteins
 
 1) `PP_metab_proc.py`: Extracts KEGG identifiers from GEM `iJN1480.txt' and processess them.
+
 **INPUT**
+
   -`iJN1480.txt`: GEM model
   -`(ID_realtionships.json): optional dictionary with KEGG-UniProt identifiers relationship. Accelerates the process. An example can be found here.
