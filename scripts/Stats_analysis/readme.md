@@ -5,6 +5,6 @@ Details of each script workflow is included in their source code.
 
 ## What does each script do?
 1. `BRENDA_ROS.ipynb`: BRENDA database exploration in search of experimental evidence, plots and dataset management.
-2. `Enrichment_Analysis.ipynb`: performs different enrichment analysis concerning structural features.
+2. `Enrichment_Analysis.ipynb`: performs different enrichment analysis concerning structural features (see SF_byClass_enrichment.xlsx)[../../data/SF_byClass_enrichment.xlsx].
 3. `EC_number_retrieval`: creates dictionary [UniProt_EC.json](../../data/UniProt_EC.json) for subsequent analyses.
 4. `metrics_distributions.R`: plots distance-related metrics distributions. 
