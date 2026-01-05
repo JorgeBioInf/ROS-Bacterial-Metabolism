@@ -15,4 +15,4 @@ All stuff available here was used to obtain the results presented in my **Master
   `Stats_analysis/` : all codes to perform **statistical analyses**.
 
 - `data/` folder with intermediate datasets and final **results**. 
-- `supplementary_figures/` folder with **supplementary figures** for the TFM.
+- `supplementary_figures/` folder with **supplementary figures** $S2$ and $S3$ for the TFM.
