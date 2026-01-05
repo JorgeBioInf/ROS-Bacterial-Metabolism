@@ -40,16 +40,37 @@ Each script's details can be found inside their source code.
       - `ID_relationships.json`.
       - Type of analysis should be specified (monomeric or multimeric).
    2. **OUTPUT**
-      - `{KEGG_ID}_UniProt_Features.json` for each monomer.
+      - `{KEGG_ID}_UniProt_Features.json` for each monomer (KEGG_ID = PP_XXXX or pWW0_XXXX). 
    
 
-### 3. Obtain ROS-susceptible structural features
+### 3. Search of ROS-susceptible structural features
 
-1. `Uniprot_Entries_Retrieval.py`: Retrieves UniProt entries of all monomers in `.json` format.
+1. `ROS_SR_finder.py`: Extracts susceptibility information of functional sites in the protein. 
    1. **INPUT**
       - `Monomers_predictions/`.
-      - `ID_relationships.json`.
       - Type of analysis should be specified (monomeric or multimeric).
    2. **OUTPUT**
-      - `{KEGG_ID}_UniProt_Features.json` for each monomer.
+      - `{KEGG_ID}_Susceptibility_Scores.json` for each monomer.
+     
+2. `Disulfide_Bonds.py`: Calculates potential disulfide bonds in proteins.  
+   1. **INPUT**
+      - `Monomers_predictions/`.
+   2. **OUTPUT**
+      - `{KEGG_ID}_Disulfide_Bonds.json` for each monomer.
    
+2. `Cofactors_and_CheBI(_and_AUX).py`: Obtains cofactors with transition metals within each proteic structure. Version ending in `"_and_AUX"` uses an auxiliary dataset for remaining CheBI identifiers (aux_chemical_data.txt).   
+   1. **INPUT**
+      - `Monomers_predictions/`.
+   2. **OUTPUT**
+      - `cofactors.json` dictionary with the cofactors of each protein.
+     
+### 4. Classification summary
+Its necessary to execute all previous steps in the exposed order. However, this can be done directly through the script used in this last step.
+
+2. `ROS_summary.py`: Generates table with each monomer's characteristics. 
+   1. **INPUT**
+      - `Monomers_predictions/`.
+   2. **OUTPUT**
+      - [`ROS_summary_full.tsv`](data/.ROS_summary_full.tsv)
+     
+This table is latter curated and statistically analysed. Subsequently, metabolic modelling can be confidently performed integrating this ROS susceptibility information. 
