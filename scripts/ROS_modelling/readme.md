@@ -1,7 +1,7 @@
 # Evaluating the impact of ROS on *P. putida* metabolism
 This codes allow to assess the impact of ROS-mediated inhibition of enzymes in the metabolism of *P. putida*. 
 
-Codes used for this aim were programmed in Jupyter Notebooks for a better manipulation and step-by-step evaluation. 
+Codes were programmed as Jupyter Notebooks for a better manipulation and step-by-step evaluation. 
 
 ## What does each script do? 
 - `metab_enrich_analysis.ipynb`: Assesses whether each metabolic subsystem belongsto primary or secondary metabolism according to enrichment analyses. 
