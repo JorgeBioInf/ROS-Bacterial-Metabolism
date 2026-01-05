@@ -9,7 +9,7 @@ Each script's details can be found inside their source code.
 1. `PP_metab_proc.py`: Extracts KEGG identifiers from GEM `iJN1480.txt` and processes them.
    1. **INPUT**
       - `iJN1480.txt`: GEM model.
-      - `(ID_relationships.json)`: optional dictionary with KEGG–UniProt identifiers relationship, accelerates the process. An example can be found here.
+      - `(ID_relationships.json)`: optional dictionary with KEGG–UniProt identifiers relationship, accelerates the process. An example can be found [here](../../data/ID_relationships.json).
    2. **OUTPUT**
       - `Monomers_to_model/`: folder with FASTA sequences of proteins without available predicted structure.
       - `Monomers_predictions/`: folder with the monomeric `.pdb` structures.
@@ -71,6 +71,6 @@ Its necessary to execute all previous steps in the exposed order. However, this 
    1. **INPUT**
       - `Monomers_predictions/`.
    2. **OUTPUT**
-      - [`ROS_summary_full.tsv`](../../data/.ROS_summary_full.tsv)
+      - [`ROS_summary_full.tsv`](../../data/ROS_summary_full.tsv).
      
 This table is latter curated and statistically analysed. Subsequently, metabolic modelling can be confidently performed integrating this ROS susceptibility information. 
