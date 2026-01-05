@@ -5,5 +5,7 @@ Codes used for this aim were programmed in Jupyter Notebooks for a better manipu
 
 ## What does each script do? 
 - `metab_enrich_analysis.ipynb`: Assesses whether each metabolic subsystem belongsto primary or secondary metabolism according to enrichment analyses. 
-- `Pputida_ROS_modelling.ipynb`: Performs single knock-out and subsystems analyses in experimentally evidenced susceptible reactions (those in [Pputida_evidenced.txt](../../data/Pputida_evidenced.txt).
-- `Pputida_ROS_modelling_extended.ipynb`: Performs single knock-out and subsystems analyses in potentially susceptible reactions (those with at least one ROS-susceptible structural feature, can be found in [ROS_summary_full.tsv](../../data/ROS_summary_full.tsv).
+- `Pputida_ROS_modelling.ipynb`: Performs single knock-out and subsystems analyses in experimentally evidenced susceptible reactions (those in [Pputida_evidenced.txt](../../data/Pputida_evidenced.txt)).
+- `Pputida_ROS_modelling_extended.ipynb`: Performs single knock-out and subsystems analyses in potentially susceptible reactions (those with at least one ROS-susceptible structural feature, can be filtered in [ROS_summary_full.tsv](../../data/ROS_summary_full.tsv)).
+- `ROS_metab.ipynb`: Performs Flux Balance Analysis (FBA), Flux Variability Analysis (FVA) and flux sampling, comparing an updated version of model `iJN1480` and a ROS-constrained version of it (constrained using experimentally evidenced susceptible reactions). Requires modules from `sampling_utils.py`. 
+- `ROS_metab_extended.ipynb`: Jupyter Notebook used for FBA, FVA and flux sampling analyses using the ROS-constrained model restricted with structural feature’s information.
