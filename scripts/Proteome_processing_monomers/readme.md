@@ -16,10 +16,34 @@ Each script's details can be found inside their source code.
       - `Complex_fastas/`: folder with FASTA sequences of extracted complexes.
       - Optional: `ID_relationships.json` dictionary.
 
+
 2. `monomeric_subfolders.py`: Creates subfolders for each protein stored in `Monomers_predictions/` folder.
 
+3. `AF.sh`: Recursively feeds AlphaFold2 with sequences stored in `Monomers_to_model` or `Complex_fastas` (with inner subfolders for each protein/complex). Requires `AF_BestRanked_and_ipTM.py` to extract the best prediction in each case. Currently NOT available. 
+   1. **INPUT**
+      - `Monomers_to_model/` or `Complex_fastas`.
+      - Type of analysis should be specified (monomeric or multimeric).
+   2. **OUTPUT**
+      - `ranked_0.pdb` file for each protein/complex.
+
+3. `Name_transformer.py`: Changes `ranked_0.pdb` predictions file names to `{PP_XXXX|pWW0_XXXX}.pdb`.
+   1. **INPUT**
+      - `Monomers_predictions`.
+   2. **OUTPUT**
+      - `{{PP_XXXX|pWW0_XXXX}.pdb}`.
 
 ### 2. UniProt information extraction
+
+1. `Uniprot_Entries_Retrieval.py`: Retrieves UniProt entries of all monomers in `.json` format.
+   1. **INPUT**
+      - `Monomers_predictions/`.
+      - `ID_relationships.json`.
+      - Type of analysis should be specified (monomeric or multimeric).
+   2. **OUTPUT**
+      - `{KEGG_ID}_UniProt_Features.json` for each monomer.
+   
+
+### 3. Obtain ROS-susceptible structural features
 
 1. `Uniprot_Entries_Retrieval.py`: Retrieves UniProt entries of all monomers in `.json` format.
    1. **INPUT**
