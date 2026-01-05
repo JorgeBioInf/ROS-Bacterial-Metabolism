@@ -9,3 +9,6 @@ Codes were programmed as Jupyter Notebooks for a better manipulation and step-by
 - `Pputida_ROS_modelling_extended.ipynb`: Performs single knock-out and subsystems analyses in potentially susceptible reactions (those with at least one ROS-susceptible structural feature, can be filtered in [ROS_summary_full.tsv](../../data/ROS_summary_full.tsv)).
 - `ROS_metab.ipynb`: Performs Flux Balance Analysis (FBA), Flux Variability Analysis (FVA) and flux sampling, comparing an updated version of model `iJN1480` and a ROS-constrained version of it (constrained using experimentally evidenced susceptible reactions). Requires modules from `sampling_utils.py`. 
 - `ROS_metab_extended.ipynb`: Jupyter Notebook used for FBA, FVA and flux sampling analyses using the ROS-constrained model restricted with structural feature’s information.
+
+## Dependencies
+All scripts depend on the python module COnstrained-Based metabolic modeling in Python: [`COBRApy`](https://github.com/opencobra/cobrapy).
