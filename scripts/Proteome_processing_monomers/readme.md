@@ -71,6 +71,6 @@ Its necessary to execute all previous steps in the exposed order. However, this 
    1. **INPUT**
       - `Monomers_predictions/`.
    2. **OUTPUT**
-      - [`ROS_summary_full.tsv`](data/.ROS_summary_full.tsv)
+      - [`ROS_summary_full.tsv`](../../data/.ROS_summary_full.tsv)
      
 This table is latter curated and statistically analysed. Subsequently, metabolic modelling can be confidently performed integrating this ROS susceptibility information. 
