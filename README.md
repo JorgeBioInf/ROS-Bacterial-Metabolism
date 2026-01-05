@@ -12,7 +12,7 @@ All stuff available here was used to obtain the results presented in my **Master
   
   `ROS_modelling/` : all codes and notebooks to evaluate the **effect of ROS on *P. putida* GEM**.
   
-  `Stats_analysis/` : all codes to perform **statistical analyses**.
+  `Stats_analysis/` : all codes to perform **statistical analyses concerning ROS-susceptible structural features**.
 
 - `data/` folder with intermediate datasets and final **results**. 
 - `supplementary_figures/` folder with **supplementary figures** $S2$ and $S3$ for the TFM.
