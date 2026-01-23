@@ -19,7 +19,7 @@ Each script's details can be found inside their source code.
 
 2. `monomeric_subfolders.py`: Creates subfolders for each protein stored in `Monomers_predictions/` folder.
 
-3. `AF.sh`: Recursively feeds AlphaFold2 with sequences stored in `Monomers_to_model` or `Complex_fastas` (with inner subfolders for each protein/complex). Requires `AF_BestRanked_and_ipTM.py` to extract the best prediction in each case. Currently NOT available. 
+3. `AF.sh`: Recursively feeds AlphaFold2 with sequences stored in `Monomers_to_model` or `Complex_fastas` (with inner subfolders for each protein/complex). Requires `AF_BestRanked_and_ipTM.py` to extract the best prediction in each case.  
    1. **INPUT**
       - `Monomers_to_model/` or `Complex_fastas`.
       - Type of analysis should be specified (monomeric or multimeric).
